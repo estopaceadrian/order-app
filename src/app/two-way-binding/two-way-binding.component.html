@@ -1,0 +1,13 @@
+<h3>2way binding</h3>
+<label for="username">username: </label>
+<input type="text" [(ngModel)]="username" id="username" />
+
+Your Username: {{ username }}
+
+<button
+  (click)="handleClick()"
+  [disabled]="username === ''"
+  class="btn btn-primary"
+>
+  Submit Username
+</button>
